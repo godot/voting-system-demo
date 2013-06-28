@@ -39,15 +39,11 @@
     <div class="navbar navbar-fluid-top">
       <div class="navbar-inner">
         <div class="container-fluid">
-          <a class="btn btn-navbar" data-target=".nav-collapse" data-toggle="collapse">
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </a>
           <a class="brand" href="#">VotingSystemDemo</a>
           <div class="container-fluid nav-collapse">
             <ul class="nav">
               <li><%= link_to "Current Voting", "/voting"  %></li>
+              <li><%= link_to "Votings", "/admin/votings"  %></li>
 
             </ul>
           </div><!--/.nav-collapse -->
@@ -57,11 +53,7 @@
 
     <div class="container-fluid">
       <div class="row-fluid">
-        <div class="span3">
-          <div class="well sidebar-nav">
-          </div><!--/.well -->
-        </div><!--/span-->
-        <div class="span9">
+        <div class="offset3 span6">
           <%= bootstrap_flash %>
           <%= yield %>
         </div>
@@ -76,7 +68,7 @@
     <!-- Javascripts
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
-    <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
+    <%= javascript_include_tag "application" %>
 
   </body>
 </html>

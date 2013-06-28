@@ -1,0 +1,14 @@
+h4 your recent selection
+= @recent
+
+
+= form_for :voting, url: voting_url do |f|
+  h4 candidates
+  ul#sortable.unstyled
+    - @ballot.candidates.each do |candidate|
+      li.well.well-small
+        i.icon-arrow-right.pull-left
+        = candidate
+        = hidden_field_tag "candidates[]", candidate
+
+  input.button.btn.btn-large.btn-primary(type='submit')= 'submit your selection'

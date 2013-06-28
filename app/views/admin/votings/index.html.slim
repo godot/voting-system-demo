@@ -1,0 +1,9 @@
+h4 votings
+
+table.table
+
+  - @votings.each do |voting|
+    tr
+      td= voting['id']
+      -voting['voting'].each do |vote|
+        td= vote
