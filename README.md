@@ -1,4 +1,4 @@
-voting-system-demo
+voting-system-demo [WIP]
 ==================
 
-rails 4 and mongodb and multiple voting strategies voting system
+rails 4 and mongodb voting system with multiple strategies
