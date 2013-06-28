@@ -18,4 +18,16 @@ class Voting
   def ballot
     Ballot.new(candidates: candidates)
   end
+
+  def result
+    ballots = Voting.all.map {|voting|
+      votes = voting['voting']
+
+      Ballot.new(votes: votes.map {|vote,index| Vote.new(vote, votes.index(vote)+1)  })
+    }
+
+    VotingStrategies::Result.new(ballots)
+  end
+
+  Vote = Struct.new(:candidate, :position)
 end

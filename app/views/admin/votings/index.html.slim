@@ -1,9 +1,17 @@
 h4 votings
 
-table.table
-
+table.table.table-hover
+  tr
+    th ballots
   - @votings.each do |voting|
     tr
       td= voting['id']
       -voting['voting'].each do |vote|
         td= vote
+
+  tr
+    th results
+  tr
+    td contingent
+    td
+      = Voting.current.result.result

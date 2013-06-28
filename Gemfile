@@ -3,17 +3,20 @@ source 'https://rubygems.org'
 gem 'rails', '4.0.0'
 
 gem 'sass-rails', '~> 4.0.0'
-gem 'less-rails'
+#gem 'less-rails'
 gem 'uglifier', '>= 1.3.0'
 gem 'coffee-rails', '~> 4.0.0'
 gem 'slim'
 gem 'twitter-bootstrap-rails'
 gem 'jquery-ui-rails'
 gem 'mongo'
+gem 'bson_ext'
 gem 'thin'
 
+gem 'voting_strategy_contingent', github: 'pawelnguyen/voting_strategy_contingent'
+
 # See https://github.com/sstephenson/execjs#readme for more supported runtimes
-gem 'therubyracer', platforms: :ruby
+# gem 'therubyracer', platforms: :ruby
 
 # Use jquery as the JavaScript library
 gem 'jquery-rails'

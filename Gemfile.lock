@@ -1,3 +1,9 @@
+GIT
+  remote: git://github.com/pawelnguyen/voting_strategy_contingent.git
+  revision: fe5c09b8d8f344ae2ea39000a6a6b010807c8b70
+  specs:
+    voting_strategy_contingent (0.0.3)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -33,6 +39,8 @@ GEM
     binding_of_caller (0.7.2)
       debug_inspector (>= 0.0.1)
     bson (1.9.0)
+    bson_ext (1.9.0)
+      bson (~> 1.9.0)
     builder (3.1.4)
     coderay (1.0.9)
     coffee-rails (4.0.0)
@@ -42,7 +50,6 @@ GEM
       coffee-script-source
       execjs
     coffee-script-source (1.6.2)
-    commonjs (0.2.6)
     daemons (1.1.9)
     debug_inspector (0.0.2)
     erubis (2.7.0)
@@ -61,12 +68,6 @@ GEM
       jquery-rails
       railties (>= 3.1.0)
     json (1.8.0)
-    less (2.3.2)
-      commonjs (~> 0.2.6)
-    less-rails (2.3.3)
-      actionpack (>= 3.1)
-      less (~> 2.3.1)
-    libv8 (3.11.8.17)
     mail (2.5.4)
       mime-types (~> 1.16)
       treetop (~> 1.4.8)
@@ -102,7 +103,6 @@ GEM
     rake (10.1.0)
     rdoc (3.12.2)
       json (~> 1.4)
-    ref (1.0.5)
     sass (3.2.9)
     sass-rails (4.0.0)
       railties (>= 4.0.0.beta, < 5.0)
@@ -125,9 +125,6 @@ GEM
       activesupport (>= 3.0)
       sprockets (~> 2.8)
     temple (0.6.5)
-    therubyracer (0.11.4)
-      libv8 (~> 3.11.8.12)
-      ref
     thin (1.5.1)
       daemons (>= 1.0.9)
       eventmachine (>= 0.12.6)
@@ -155,11 +152,11 @@ PLATFORMS
 DEPENDENCIES
   better_errors
   binding_of_caller
+  bson_ext
   coffee-rails (~> 4.0.0)
   jbuilder (~> 1.2)
   jquery-rails
   jquery-ui-rails
-  less-rails
   mongo
   pry
   quiet_assets
@@ -167,7 +164,7 @@ DEPENDENCIES
   sass-rails (~> 4.0.0)
   sdoc
   slim
-  therubyracer
   thin
   twitter-bootstrap-rails
   uglifier (>= 1.3.0)
+  voting_strategy_contingent!

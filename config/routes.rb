@@ -1,7 +1,10 @@
 VotingSystemDemo::Application.routes.draw do
   root 'votings#show'
+
   resource :voting
+
   namespace :admin do
-    resources :votings
+    resources :votings, only: 'index'
   end
+
 end
